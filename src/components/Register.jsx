@@ -1,9 +1,11 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import axios from "axios";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as yup from "yup";
 import "./Register.css";
 const Register = () => {
+  const history = useHistory();
   const emailRegExp = /^([a-zA-Z0-9-.]+)@([a-zA-Z0-9-.]+).([a-zA-Z]{2,5})$/;
   const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
   return (
@@ -33,7 +35,7 @@ const Register = () => {
               // console.log(JSON.stringify(payload, null, 2));
               axios
                 .post(`http://localhost:5000/user/register`, payload)
-                .then((res) => console.log(res))
+                .then(() => history.push("/user"))
                 .catch((err) => console.log(err));
               resetForm();
               setSubmitting(false);

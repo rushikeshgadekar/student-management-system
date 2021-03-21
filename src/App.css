@@ -1,0 +1,24 @@
+.logo {
+  width: 100%;
+}
+
+.home-btn {
+  height: 21.6px;
+  position: absolute;
+  z-index: 999;
+  padding: 30px;
+}
+
+.logo-img {
+  box-shadow: 2px 2px 30px rgba(44, 47, 209, 0.5);
+  cursor: pointer;
+  transition: 0.9s;
+  height: 85px;
+  border-radius: 50%;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+  transform: rotate(120deg);
+  box-shadow: 0 0 10px #f7f7f7;
+}

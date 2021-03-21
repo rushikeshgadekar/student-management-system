@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import UserTable from "./UserTable";
+import "./User.css";
 const User = () => {
   const [userData, setUserData] = useState([]);
   useEffect(() => {
@@ -15,8 +16,10 @@ const User = () => {
 
   return (
     <>
-      <h2>Student Details</h2>
-      <UserTable data={userData} />
+      <div className="show-user">
+        <h2 className="std-heading">Student Details</h2>
+        <UserTable data={userData} />
+      </div>
     </>
   );
 };

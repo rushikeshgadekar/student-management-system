@@ -1,0 +1,57 @@
+.home-root {
+  background-image: url("../asset/home-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+.home-heading {
+  font-family: "Source Serif Pro", serif;
+  font-weight: bolder;
+  font-size: 70px;
+  text-align: center;
+  color: white;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.navlink {
+  padding: 15px;
+}
+.nav-btn {
+  font-family: "Source Serif Pro", serif;
+  position: relative;
+  /* background-color: #88e770; */
+  border: none;
+  padding: 20px;
+  width: 200px;
+  font-size: 25px;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  box-shadow: 0 0 16px #717274;
+  color: white;
+
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 3px 8px 10px 0 rgba(149, 155, 241, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.nav-btn:hover {
+  background: rgb(159, 183, 219);
+  color: black;
+  cursor: pointer;
+}
