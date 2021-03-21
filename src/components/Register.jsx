@@ -34,7 +34,10 @@ const Register = () => {
               };
               // console.log(JSON.stringify(payload, null, 2));
               axios
-                .post(`http://localhost:5000/user/register`, payload)
+                .post(
+                  `https://stu-management-system.herokuapp.com/user/register`,
+                  payload
+                )
                 .then(() => history.push("/user"))
                 .catch((err) => console.log(err));
               resetForm();

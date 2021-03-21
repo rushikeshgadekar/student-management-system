@@ -6,7 +6,7 @@ const User = () => {
   const [userData, setUserData] = useState([]);
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/user/`)
+      .get(`https://stu-management-system.herokuapp.com/user/`)
       .then((res) => {
         const data = res.data;
         setUserData(data);
